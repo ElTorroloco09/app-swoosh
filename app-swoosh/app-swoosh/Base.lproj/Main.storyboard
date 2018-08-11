@@ -120,6 +120,9 @@
                                             <constraint firstAttribute="height" constant="44" id="VXX-Bb-u0h"/>
                                         </constraints>
                                         <state key="normal" title="Mens"/>
+                                        <connections>
+                                            <action selector="onMensTapped:" destination="GQN-7d-pAI" eventType="touchUpInside" id="4DZ-L1-2Jo"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uwd-MB-8el" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="59" width="335" height="44"/>
@@ -128,6 +131,9 @@
                                             <constraint firstAttribute="height" constant="44" id="Y1j-dc-LZt"/>
                                         </constraints>
                                         <state key="normal" title="Womens"/>
+                                        <connections>
+                                            <action selector="onWomensTapped:" destination="GQN-7d-pAI" eventType="touchUpInside" id="FaD-RJ-YTi"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ntQ-ap-9it" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="118" width="335" height="44"/>
@@ -136,10 +142,13 @@
                                             <constraint firstAttribute="height" constant="44" id="TCd-bQ-zqh"/>
                                         </constraints>
                                         <state key="normal" title="Co-ed"/>
+                                        <connections>
+                                            <action selector="onCoedTapped:" destination="GQN-7d-pAI" eventType="touchUpInside" id="t2H-5o-ufj"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ut-Te-ZFb" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ut-Te-ZFb" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                 <rect key="frame" x="16" y="607" width="343" height="44"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.40520654969999997" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -184,6 +193,7 @@
                         <viewLayoutGuide key="safeArea" id="BvP-h7-SJ7"/>
                     </view>
                     <connections>
+                        <outlet property="nextBtn" destination="1ut-Te-ZFb" id="LrZ-Qg-3Ny"/>
                         <segue destination="hve-nL-aid" kind="show" identifier="skillVCSegue" id="oSj-PI-PxZ"/>
                     </connections>
                 </viewController>
