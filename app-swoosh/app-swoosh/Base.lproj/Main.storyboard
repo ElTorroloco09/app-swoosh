@@ -147,6 +147,9 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="L8R-Vj-fJc"/>
                                 </constraints>
                                 <state key="normal" title="NEXT"/>
+                                <connections>
+                                    <action selector="onNextTapped:" destination="GQN-7d-pAI" eventType="touchUpInside" id="iQl-sS-yZU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5P-Bz-zyw">
                                 <rect key="frame" x="32" y="40" width="32" height="24"/>
@@ -180,6 +183,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BvP-h7-SJ7"/>
                     </view>
+                    <connections>
+                        <segue destination="hve-nL-aid" kind="show" identifier="skillVCSegue" id="oSj-PI-PxZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="00U-jU-Nda" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="fMa-jc-doH" userLabel="Exit" sceneMemberID="exit"/>
